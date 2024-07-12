@@ -22,5 +22,10 @@
       "css": ["main.css"]
     }
   ],
-  "web_accessible_resources": ["main.css"]
+  "web_accessible_resources": ["main.css"],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{e7a7340e-988c-46d1-9fba-c473df78e5a5}"
+    }
+  }
 }

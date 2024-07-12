@@ -1,0 +1,39 @@
+{
+  "icons": {
+    "128": "icon.png"
+  },
+  "manifest_version": 2,
+  "browser_action": {
+    "default_icon": {
+	  "128": "icon.png"
+    },
+    "default_popup": "index.html"
+  },
+  "version": "0.5.6",
+  "author": "DeeJayy",
+  "name": "LinkedIn Noise Remover",
+  "description": "LinkedIn Noise Remover",
+  "permissions": [
+    "storage",
+    "https://linkedin.*/*",
+    "https://*.linkedin.*/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://linkedin.*/*",
+        "https://*.linkedin.*/*"
+      ],
+      "js": [
+        "main.js"
+      ],
+      "all_frames": true,
+      "css": [
+        "main.css"
+      ]
+    }
+  ],
+  "web_accessible_resources": [
+    "main.css"
+  ]
+}
